@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#293E97</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#448AFF</color>
+    <color name="lightsilver2">#56767A6E</color>
+    <color name="lightsilver">#43DEDED6</color>
+    <color name="red">#F00</color>
+    <color name="white">#FFF</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="danger">#DE3E44</color>
+    <color name="success">#22bb33</color>
+    <color name="warning">#FEC001</color>
+</resources>

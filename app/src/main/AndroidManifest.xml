@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zamashops">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".utility.App"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.TermActivity"
+            ></activity>
+        <activity android:name=".activities.ImagePickerActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- cache directory file provider paths -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:ignore="WrongManifestParent">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activities.SellerProfileUserActivity"
+            android:label="@string/title_activity_seller_profile_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.FullScreenViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PrivacyActivity"
+            android:label="Privacy"
+            android:parentActivityName=".activities.ProfileActivity" />
+        <activity android:name=".activities.VerificationActivity" />
+        <activity android:name=".activities.HelpActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SearchUserActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.EditProfileActivity" />
+        <activity android:name=".MainLoginActivity"
+            android:noHistory="true"/>
+        <activity
+            android:name=".activities.ChatRoomActivity"
+            android:label="Chat"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:parentActivityName=".activities.AllChatActivity" />
+        <activity
+            android:name=".activities.AllChatActivity"
+            android:label="All Chat"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activities.AllUserActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.FollowingActivity"
+            android:label="Following" />
+        <activity
+            android:name=".activities.FollowersActivity"
+            android:label="Followers" />
+        <activity
+            android:name=".activities.FollowerPostActivity"
+            android:label="Followers Ads" />
+        <activity
+            android:name=".activities.MyPostAcitivity"
+            android:label="My Shop" />
+        <activity android:name=".activities.FilterActivity" />
+        <activity android:name=".activities.UserPostActivity" />
+        <activity
+            android:name=".activities.SellerProfileActivity"
+            android:label="User Shop" />
+        <activity
+            android:name=".activities.FavouriteActivity"
+            android:label="Favourite Posts" />
+        <activity
+            android:name=".activities.SearchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AllProductActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:label="Sign Up" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".activities.AddAdsActivity"
+            android:label="Add Post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AddAdsActivity2"
+            android:label="Add Post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UpdateAdsActivity"
+            android:label="Update Post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UpdateAdsActivity2"
+            android:label="Update Post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="Profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ProductDetailActivity"
+            android:exported="true"
+            android:label="Profile"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <tools:validation testUrl="http://maxtech.edu.pk/product/" /> -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="zamashops.com"
+                    android:scheme="http"
+                    android:pathPrefix="/product/" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MainCategoryActivity"
+            android:label="All Categories"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activities.SubCategoryActivity"
+            android:label="Sub Categories"
+            android:parentActivityName=".activities.MainCategoryActivity" />
+
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+<!--        -->
+
+
+
+
+
+    </application>
+
+</manifest>

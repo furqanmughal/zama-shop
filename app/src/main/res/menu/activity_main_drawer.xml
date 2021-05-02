@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_myshop"
+            android:icon="@drawable/ic_content_paste_white_24dp"
+            android:title="My Shop" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:title="Inbox"
+            android:icon="@drawable/ic_message_message_24dp"
+            app:actionLayout="@layout/bage"
+           />
+
+        <item
+            android:id="@+id/nav_add_post"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="Add Post" />
+
+        <item
+            android:id="@+id/nav_follower_post"
+            android:icon="@drawable/ic_subtitles_black_24dp"
+            android:title="Followers Posts" />
+
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="Favourite Posts" />
+
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search" />
+
+
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/ic_supervisor_account_black_24dp"
+            android:title="All Shop" />
+
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Logout" />
+
+
+
+
+    </group>
+
+    <item android:title="Help and Policy">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_baseline_help_24"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_policy"
+                android:icon="@drawable/ic_baseline_import_contacts_24"
+                android:title="Term and Condition" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_rateus"
+                android:icon="@drawable/ic_star_black_24dp"
+                android:title="Rate Us" />
+        </menu>
+    </item>
+
+
+
+</menu>

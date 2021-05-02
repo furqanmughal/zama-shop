@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_sold_out"
+        android:title="Sold Out"/>
+
+    <item
+        android:id="@+id/menu_remove"
+        android:title="Remove"/>
+
+
+
+</menu>

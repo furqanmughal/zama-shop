@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SubCategoryActivity"
+    android:background="@color/lightsilver"
+    >
+
+    <LinearLayout
+        android:id="@+id/lin_category_item"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_category_item"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView
+            android:id="@+id/img_category"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_primary"
+            android:padding="7dp"
+            android:src="@drawable/ic_format_list_bulleted_white_24dp" />
+
+        <TextView
+            android:id="@+id/txt_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sub Categories"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_all_main_categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "371327012373",
+    "firebase_url": "https://zama-shops.firebaseio.com",
+    "project_id": "zama-shops",
+    "storage_bucket": "zama-shops.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371327012373:android:0b8ff3083e0460385e081c",
+        "android_client_info": {
+          "package_name": "com.zamashops"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371327012373-sk6tvdskjj69vpullernm0lieg3093e1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zamashops",
+            "certificate_hash": "f0a336df38d5311d6af9deab937cc2f6fa2dcc40"
+          }
+        },
+        {
+          "client_id": "371327012373-0jld88btv8lgrot7v82li0v264c70qqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCsMN-k6pDgZ9OoWgxM8HV-jyFLoHHtiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371327012373-0jld88btv8lgrot7v82li0v264c70qqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
